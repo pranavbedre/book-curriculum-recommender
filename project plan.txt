@@ -1,0 +1,52 @@
+Mini Project Planning
+
+tech stack: java and JDBC
+
+I/P:
+1. student name
+2. Roll number
+3. Engineering department
+4. Semester number
+
+O/P:
+1. course names
+2. book titles (and, hopefully, youtube links for a few choices)
+
+OOPS principal used - data abstraction
+
+*a way to read a specific line in a file:
+String line32 = Files.readAllLines(Paths.get("file.txt")).get(32)    *
+
+
+CLASS 1
+accept user data and write it to text file
+
+CLASS 2
+read text file - engineering dept and semester no. fetch course names from database and write in text file
+
+CLASS 3
+read text file - courses and fetch book titles and youtube links and write in text file
+
+
+public static void main(String[] args) {
+    input i = new input();
+  }
+
+  try {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter student's name: ");
+        String name = scanner.nextLine();
+
+        File myObj = new File("student text files/" + name + "/" +  name + "_details.txt");
+        Scanner myReader = new Scanner(myObj);
+
+        while (myReader.hasNextLine()) {
+          String details = myReader.nextLine();
+          System.out.println(details);
+        }
+        myReader.close();
+        scanner.close();
+      } catch (FileNotFoundException e) {
+        System.out.println("An error occurred.");
+        e.printStackTrace();
+      }

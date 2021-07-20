@@ -1,0 +1,5 @@
+Book recommendations for you: Analysis and Design of  Algorithms - "Analysis and Design of Algorithms", 
+Operating System  - "Operating System Principles", 
+Database Management System - "Information Storage and Management: Storing, Managing, and Protecting Digital Information", 
+Finite Automata and Compiler Design - "Finite Automata and Formal Language: A Simple Approach", 
+python - "Fundamentals of python first programs"
